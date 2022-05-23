@@ -11,9 +11,9 @@
     <div id="container">
 
         <header class="header">
-            <h1 id="title" class="text-center"></h1>
+            <h1 id="title" class="text-center">Basketball Player Survey Form</h1>
             <p id="description" class="description text-center">
-
+                Thank you for taking the time to help us.
             </p>
         </header>
         <form id="survey-form">
@@ -27,18 +27,123 @@
             </div>
             <div class="form-group">
                 <label id="number-label" for="number">Age</label>
-                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Enter your Age" required />
+                <input type="number" name="age" id="number" min="10" max="40" class="form-control" placeholder="Age" required />
+            </div>
+            <div class="form-group">
+                <p>What is your gender?</p>
+                <label>
+                    <input type="radio" name="gender" value="male" class="input-radio" checked />Male
+                    <input type="radio" name="gender" value="female" class="input-radio" />Female
+                </label> 
             </div>
             <div class="form-group">
                 <p>What is your position on the court?</p>
                 <select id="dropdown" name="role" class="form-control" required>
                     <option disabled selected value>Select current position</option>
                     <option value="point-guard">Point Guard</option>
-                    <option value="shooting-guard">Shooting Guard</option>
+                    <option value="guard">Guard</option>
                     <option value="small-forward">Small Forward</option>
                     <option value="power-forward">Power Forward</option>
                     <option value="center">Center</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <p>Do you watch national basketball? LUB (Liga Uruguaya de B&aacute;squetbol)</p>
+                <label>
+                    <input type="radio" name="lub" value="yes" class="input-radio" checked />Yes
+                    <input type="radio" name="lub" value="no" class="input-radio" />No
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Which is your favorite LUB basketball team?</p>
+                <select id="dropdown" name="lub-team" class="form-control">
+                    <option disbled selected value>Select a team</option>
+                    <option value="goes">Goes</option>
+                    <option value="bigua">Bigu&aacute;</option>
+                    <option value="urupan">Urupan</option>
+                    <option value="penarol">Pe&ntilde;arol</option>
+                    <option value="malvin">Malv&iacute;</option>
+                    <option value="trouville">Trouville</option>
+                    <option value="olimpia">Olimpia</option>
+                    <option value="aguada">Aguada</option>
+                    <option value="nacional">Nacional</option>
+                    <option value="defensor-sporting">Defensor Sporting</option>
+                    <option value="hebraica-macabi">Hebraica y Macabi</option>
+                    <option value="urunday">Urunday Universitario</option>
+                    <option value="olivol">Olivol Mundial</option>
+                    <option value="capitol">Capitol</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which is your favorite basketball player in the LUB?</p>
+                <label id="player-name" for="lub-player-name">LUB Player Name</label>
+                <input type="text" name="lub-player-name" id="lub-player-name" class="form-control" placeholder="Player's name" />
+            </div>  
+            <div class="form-group">
+                <p>Do you watch NBA?</p>
+                <label>
+                    <input type="radio" name="nba" value="yes" class="input-radio" checked />Yes
+                    <input type="radio" name="nba" value="no" class="input-radio" />No
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Which is your favorite NBA basketball team?</p>
+                <select id="dropdown" name="nba-team" class="form-control">
+                    <option disbled selected value>Select a team</option>
+                    <option value="celtics">Boston Celtics</option>
+                    <option value="nets">Brooklyn Nets</option>
+                    <option value="knicks">New York Knicks</option>
+                    <option value="76ers">Philadelphia 76ers</option>
+                    <option value="raptors">Toronto Raptors</option>
+                    <option value="bulls">Chicago Bulls</option>
+                    <option value="cavaliers">Cleveland Cavaliers</option>
+                    <option value="pistons">Detroit Pistons</option>
+                    <option value="pacers">Indiana Pacers</option>
+                    <option value="bucks">Milwaukee Bucks</option>
+                    <option value="hawks">Atlanta Hawks</option>
+                    <option value="hornets">Charlotte Hornets</option>
+                    <option value="heat">Miami Heat</option>
+                    <option value="magic">Orlando Magic</option>
+                    <option value="wizards">Washington Wizards</option>
+                    <option value="nuggets">Denver Nuggets</option>
+                    <option value="timberwolves">Minnesota Timberwolves</option>
+                    <option value="thunder">Oklahoma City Thunder</option>
+                    <option value="blazers">Portland Trail Blazers</option>
+                    <option value="jazz">Utah Jazz</option>
+                    <option value="warriors">Golden State Warriors</option>
+                    <option value="clippers">LA Clippers</option>
+                    <option value="lakers">Los Angeles Lakers</option>
+                    <option value="suns">Phoenix Suns</option>
+                    <option value="kings">Sacramento Kings</option>
+                    <option value="mavericks">Dallas Mavericks</option>
+                    <option value="rockets">Houston Rockets</option>
+                    <option value="grizzlies">Memphis Grizzlies</option>
+                    <option value="pelicans">New Orleans Pelicans</option>
+                    <option value="spurs">San Antonio Spurs</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which is your favorite basketball player in the NBA?</p>
+                <label id="player-name" for="nba-player-name">NBA Player Name</label>
+                <input type="text" name="nba-player-name" id="nba-player-name" class="form-control" placeholder="Player's name" />
+            </div>
+            <div class="form-group">
+                <p>What basketball leagues do you watch?</p>
+                <label>
+                    <input name="watch" value="lub" type="checkbox" class="input-checkbox" />LUB - Liga Uruguaya de B&aacute;squetbol
+                    <input name="watch" value="nba" type="checkbox" class="input-checkbox" />NBA - National Basketball Association
+                    <input name="watch" value="lnb" type="checkbox" class="input-checkbox" />LNB - Liga Nacional de B&aacute;squetbol
+                    <input name="watch" value="lbsa" type="checkbox" class="input-checkbox" />LBSA - Lega Basket Serie A  
+                    <input name="watch" value="lacb" type="checkbox" class="input-checkbox" />LACB - Liga ACB
+                    <input name="watch" value="nbb" type="checkbox" class="input-checkbox" />NBB - Novo Basquete brasil
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
         </form>
     </div>
