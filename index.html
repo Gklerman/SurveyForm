@@ -7,9 +7,10 @@
     <title>Player's Survey Form</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <div id="container">
+    <div class="container">
 
         <header class="header">
             <h1 id="title" class="text-center">Basketball Player Survey Form</h1>
@@ -28,12 +29,12 @@
             </div>
             <div class="form-group">
                 <label id="number-label" for="number">Age</label>
-                <input type="number" name="age" id="number" min="10" max="40" class="form-control" placeholder="Age" required />
+                <input type="number" name="age" id="number" min="10" max="40" class="form-control" placeholder="Enter your Age" required />
             </div>
             <div class="form-group">
                 <p>What is your gender?</p>
                 <label>
-                    <input type="radio" name="gender" value="male" class="input-radio" checked />Male
+                    <input type="radio" name="gender" value="male" class="input-radio" />Male
                     <input type="radio" name="gender" value="female" class="input-radio" />Female
                 </label> 
             </div>
@@ -58,12 +59,12 @@
             <div class="form-group">
                 <p>Which is your favorite LUB basketball team?</p>
                 <select id="dropdown" name="lub-team" class="form-control">
-                    <option disbled selected value>Select a team</option>
+                    <option disabled selected value>Select a team</option>
                     <option value="goes">Goes</option>
                     <option value="bigua">Bigu&aacute;</option>
                     <option value="urupan">Urupan</option>
                     <option value="penarol">Pe&ntilde;arol</option>
-                    <option value="malvin">Malv&iacute;</option>
+                    <option value="malvin">Malv&iacute;n</option>
                     <option value="trouville">Trouville</option>
                     <option value="olimpia">Olimpia</option>
                     <option value="aguada">Aguada</option>
@@ -77,7 +78,7 @@
             </div>
             <div class="form-group">
                 <p>Which is your favorite basketball player in the LUB?</p>
-                <label id="player-name" for="lub-player-name">LUB Player Name</label>
+                <label id="player-name" for="lub-player-name"></label>
                 <input type="text" name="lub-player-name" id="lub-player-name" class="form-control" placeholder="Player's name" />
             </div>  
             <div class="form-group">
@@ -90,7 +91,7 @@
             <div class="form-group">
                 <p>Which is your favorite NBA basketball team?</p>
                 <select id="dropdown" name="nba-team" class="form-control">
-                    <option disbled selected value>Select a team</option>
+                    <option disabled selected value>Select a team</option>
                     <option value="celtics">Boston Celtics</option>
                     <option value="nets">Brooklyn Nets</option>
                     <option value="knicks">New York Knicks</option>
@@ -125,19 +126,17 @@
             </div>
             <div class="form-group">
                 <p>Which is your favorite basketball player in the NBA?</p>
-                <label id="player-name" for="nba-player-name">NBA Player Name</label>
+                <label id="player-name" for="nba-player-name"></label>
                 <input type="text" name="nba-player-name" id="nba-player-name" class="form-control" placeholder="Player's name" />
             </div>
             <div class="form-group">
-                <p>What basketball leagues do you watch?</p>
-                <label>
-                    <input name="watch" value="lub" type="checkbox" class="input-checkbox" />LUB - Liga Uruguaya de B&aacute;squetbol
-                    <input name="watch" value="nba" type="checkbox" class="input-checkbox" />NBA - National Basketball Association
-                    <input name="watch" value="lnb" type="checkbox" class="input-checkbox" />LNB - Liga Nacional de B&aacute;squetbol
-                    <input name="watch" value="lbsa" type="checkbox" class="input-checkbox" />LBSA - Lega Basket Serie A  
-                    <input name="watch" value="lacb" type="checkbox" class="input-checkbox" />LACB - Liga ACB
-                    <input name="watch" value="nbb" type="checkbox" class="input-checkbox" />NBB - Novo Basquete brasil
-                </label>
+                <p class="watch">What basketball leagues do you watch?</p>
+                <label><input name="watch" value="lub" type="checkbox" class="input-checkbox" />LUB - Liga Uruguaya de B&aacute;squetbol</label><br />
+                <label><input name="watch" value="nba" type="checkbox" class="input-checkbox" />NBA - National Basketball Association</label><br />
+                <label><input name="watch" value="lnb" type="checkbox" class="input-checkbox" />LNB - Liga Nacional de B&aacute;squetbol</label><br />
+                <label><input name="watch" value="lbsa" type="checkbox" class="input-checkbox" />LBSA - Lega Basket Serie A</label><br />
+                <label><input name="watch" value="lacb" type="checkbox" class="input-checkbox" />LACB - Liga ACB</label><br />
+                <label><input name="watch" value="nbb" type="checkbox" class="input-checkbox" />NBB - Novo Basquete Brasil</label>
             </div>
             <div class="form-group">
                 <p>Any comments or suggestions?</p>
