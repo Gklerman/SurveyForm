@@ -18,35 +18,41 @@
                 Thank you for taking the time to help us.
             </p>
         </header>
+        <div class="lang-container">
+            <div class="lang-wrap">
+                <a href="#" language='english' class="active">EN</a>
+                <a href="#" language='spanish'>SP</a>
+            </div>
+        </div>
         <form id="survey-form">
             <div class="form-group">
-                <label id="name-label" for="name">Name</label>
+                <label id="nameLabel" for="name">Name</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
             </div>
             <div class="form-group">
-                <label id="email-label" for="email">Email</label>
+                <label id="emailLabel" for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
             </div>
             <div class="form-group">
-                <label id="number-label" for="number">Age</label>
+                <label id="numberLabel" for="number">Age</label>
                 <input type="number" name="age" id="number" min="10" max="40" class="form-control" placeholder="Enter your Age" required />
             </div>
             <div class="form-group">
-                <p>What is your gender?</p>
+                <p class="gender">What is your gender?</p>
                 <label>
-                    <input type="radio" name="gender" value="male" class="input-radio" />Male
-                    <input type="radio" name="gender" value="female" class="input-radio" />Female
+                    <input type="radio" name="gender" value="male" class="input-radio" /><b class="genderMale">Male</b>
+                    <input type="radio" name="gender" value="female" class="input-radio" /><b class="genderFemale">Female</b>
                 </label> 
             </div>
             <div class="form-group">
-                <p>What is your position on the court?</p>
+                <p class="courtPos">What is your position on the court?</p>
                 <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected value>Select current position</option>
-                    <option value="point-guard">Point Guard</option>
-                    <option value="guard">Guard</option>
-                    <option value="small-forward">Small Forward</option>
-                    <option value="power-forward">Power Forward</option>
-                    <option value="center">Center</option>
+                    <option disabled selected value class="pos">Select current position</option>
+                    <option value="point-guard" class="pointGuard">Point Guard</option>
+                    <option value="guard" class="guard">Guard</option>
+                    <option value="small-forward" class="smallForward">Small Forward</option>
+                    <option value="power-forward" class="powerForward">Power Forward</option>
+                    <option value="center" class="center">Center</option>
                 </select>
             </div>
             <div class="form-group">
@@ -154,6 +160,6 @@
             </div>
         </form>
     </div>
-    
+    <script src="js/langwrap.js"></script>
 </body>
 </html>

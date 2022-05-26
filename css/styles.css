@@ -27,13 +27,34 @@ p {
     margin-bottom: 5px;
     color: orange;
 }
+b {
+    font-weight: lighter;
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
     background-color: rgba(40, 55, 60, 0.8);
     border-radius: 5px;
 }
-
+.lang-container {
+    position:inherit;
+    float: right;
+    width: 120px;
+    background-color: #333;
+    padding: 10px;
+}
+.lang-container a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    background: #555656;
+    font-size: 18px;
+}
+a.active {
+    background-color: orangered;    
+}
 #survey-form {
     margin: 35px;
 }
@@ -59,7 +80,7 @@ label {
     display: flex;
     align-items: center;
 }
-#name-label, #email-label, #number-label {
+#nameLabel, #emailLabel, #numberLabel {
     margin-top: 10px;
     font-size: 1.2em;
     color: orange;
