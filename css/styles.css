@@ -30,6 +30,7 @@ p {
 b {
     font-weight: lighter;
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -76,6 +77,7 @@ a.active {
 ::placeholder {
     color: #ccc;
 }
+
 label {
     display: flex;
     align-items: center;

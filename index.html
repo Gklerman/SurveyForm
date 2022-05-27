@@ -27,15 +27,15 @@
         <form id="survey-form">
             <div class="form-group">
                 <label id="nameLabel" for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                <input type="text" name="name" id="name" class="form-control" required />
             </div>
             <div class="form-group">
                 <label id="emailLabel" for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+                <input type="email" name="email" id="email" class="form-control" required />
             </div>
             <div class="form-group">
                 <label id="numberLabel" for="number">Age</label>
-                <input type="number" name="age" id="number" min="10" max="40" class="form-control" placeholder="Enter your Age" required />
+                <input type="number" name="age" id="number" min="10" max="40" class="form-control" required />
             </div>
             <div class="form-group">
                 <p class="gender">What is your gender?</p>
@@ -56,23 +56,23 @@
                 </select>
             </div>
             <div class="form-group">
-                <p>Would you like to see your statistics on a website?</p>
+                <p class="statsText">Would you like to see your statistics on a website?</p>
                 <label>
-                    <input type="radio" name="lub" value="yes" class="input-radio" checked />Yes
+                    <input type="radio" name="lub" value="yes" class="input-radio" checked /><b class="siText">Yes</b>
                     <input type="radio" name="lub" value="no" class="input-radio" />No
                 </label> 
             </div>
             <div class="form-group">
-                <p>Do you watch national basketball? LUB (Liga Uruguaya de B&aacute;squetbol)</p>
+                <p class="lubaText">Do you watch national basketball? LUB (Liga Uruguaya de B&aacute;squetbol)</p>
                 <label>
-                    <input type="radio" name="lub" value="yes" class="input-radio" checked />Yes
+                    <input type="radio" name="lub" value="yes" class="input-radio" checked /><b class="siaText">Yes</b>
                     <input type="radio" name="lub" value="no" class="input-radio" />No
                 </label>
             </div>
             <div class="form-group">
-                <p>Which is your favorite LUB basketball team?</p>
+                <p class="lubbText">Which is your favorite LUB basketball team?</p>
                 <select id="dropdown" name="lub-team" class="form-control">
-                    <option disabled selected value>Select a team</option>
+                    <option disabled selected value class="selTeam">Select a team</option>
                     <option value="goes">Goes</option>
                     <option value="bigua">Bigu&aacute;</option>
                     <option value="urupan">Urupan</option>
@@ -90,14 +90,14 @@
                 </select>
             </div>
             <div class="form-group">
-                <p>Which is your favorite basketball player in the LUB?</p>
+                <p class="playerLub">Which is your favorite basketball player in the LUB?</p>
                 <label id="player-name" for="lub-player-name"></label>
-                <input type="text" name="lub-player-name" id="lub-player-name" class="form-control" placeholder="Player's name" />
+                <input type="text" name="lub-player-name" id="lub-player-name" class="form-control" />
             </div>  
             <div class="form-group">
                 <p>Do you watch NBA?</p>
                 <label>
-                    <input type="radio" name="nba" value="yes" class="input-radio" checked />Yes
+                    <input type="radio" name="nba" value="yes" class="input-radio" checked /><b class="sibText">Yes</b>
                     <input type="radio" name="nba" value="no" class="input-radio" />No
                 </label>
             </div>
@@ -140,7 +140,7 @@
             <div class="form-group">
                 <p>Which is your favorite basketball player in the NBA?</p>
                 <label id="player-name" for="nba-player-name"></label>
-                <input type="text" name="nba-player-name" id="nba-player-name" class="form-control" placeholder="Player's name" />
+                <input type="text" name="nba-player-name" id="nba-player-name" class="form-control" />
             </div>
             <div class="form-group">
                 <p class="watch">What basketball leagues do you watch?</p>
@@ -153,13 +153,15 @@
             </div>
             <div class="form-group">
                 <p>Any comments or suggestions?</p>
-                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                <textarea id="comments" class="input-textarea" name="comment"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
         </form>
     </div>
+
     <script src="js/langwrap.js"></script>
+    
 </body>
 </html>
