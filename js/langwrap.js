@@ -4,6 +4,7 @@ const link = document.querySelectorAll('a');
 const titleEl = document.querySelector('#title');
 const descrEl = document.querySelector('#description');
 const nameEl = document.querySelector('#nameLabel');
+const usernameEl = document.querySelector('#name');
 const emailEl = document.querySelector('#emailLabel');
 const numberEl = document.querySelector('#numberLabel');
 const genderEl = document.querySelector('.gender');
@@ -24,7 +25,13 @@ const lubaEl = document.querySelector('.lubaText');
 const lubbEl = document.querySelector('.lubbText');
 const seltEl = document.querySelector('.selTeam');
 const playerlubEl = document.querySelector('.playerLub');
-const placeEl = document.getElementsByName('placeholder');
+const watchNbaEl = document.querySelector('.watchNba');
+const teamNbaEl = document.querySelector('.teamNba');
+const seltnbaEl = document.querySelector('.selTeamNba');
+const favPlayerEl = document.querySelector('.favPlayer');
+const watchLeaguesEl = document.querySelector('.watchLeagues');
+const commentsEl = document.querySelector('.comments');
+const btnSubmitEl = document.querySelector('.btnSubmit');
 
 link.forEach(el => {
     el.addEventListener('click', () => {
@@ -32,6 +39,8 @@ link.forEach(el => {
         el.classList.add('active');
 
         const attr = el.getAttribute('language');
+
+        // document.getElementsByName('name')[0].placeholder = 'Nombre';
 
         titleEl.textContent = data[attr].title;
         descrEl.textContent = data[attr].description;
@@ -56,7 +65,13 @@ link.forEach(el => {
         lubbEl.textContent = data[attr].lubbText;
         seltEl.textContent = data[attr].selTeam;
         playerlubEl.textContent = data[attr].playerLub;
-        placeEl.textContent = data[attr].placeholder;
+        watchNbaEl.textContent = data[attr].watchNba;
+        teamNbaEl.textContent = data[attr].teamNba;
+        seltnbaEl.textContent = data[attr].selTeamNba;
+        favPlayerEl.textContent = data[attr].favPlayer;
+        watchLeaguesEl.textContent = data[attr].watchLeagues;
+        commentsEl.textContent = data[attr].comments;
+        btnSubmitEl.textContent = data[attr].btnSubmit;
     });
 });
 
@@ -86,16 +101,15 @@ var data = {
         "lubbText": "Which is your favorite LUB basketball team?",
         "selTeam": "Select a team",
         "playerLub": "Which is your favorite basketball player in the LUB?",
-        "placeholder": "Player's name",
-        "": "Do yo watch NBA?",
-        "": "Which is your favorite NBA basketball team?",
-        "": "Select a team",
-        "": "Which is your favorite basketball player in the NBA?",
-        "": "Player's name",
-        "": "What basketball leagues do you watch?",
-        "": "Any comments or suggestions?",
-        "": "Enter your comment here...",
-        "": "Submit"
+        "watchNba": "Do yo watch NBA?",
+        "teamNba": "Which is your favorite NBA basketball team?",
+        "selTeamNba": "Select a team",
+        "favPlayer": "Which is your favorite basketball player in the NBA?",
+        // "": "Player Name",
+        "watchLeagues": "What basketball leagues do you watch?",
+        "comments": "Any comments or suggestions?",
+        // "": "Enter your comment here...",
+        "btnSubmit": "Submit"
     },
     "spanish": {
         "title": "Encuesta Jugadores de Basket",
@@ -121,15 +135,14 @@ var data = {
         "lubbText": "Cuál es tu equipo favorito de la LUB?",
         "selTeam": "Selecciona un equipo",
         "playerLub": "Cuál es tu jugador favorito de la LUB?",
-        "placeholder": "Nombre del jugador",
-        "": "Sigues los partidos de la NBA?",
-        "": "Cuál es tu equipo favorito de la NBA?",
-        "": "Selecciona un equipo",
-        "": "Cuál es tu jugador favorito de la NBA?",
-        "": "Nombre del jugador",
-        "": "Qué otras ligas de basketball sigues o miras por TV?",
-        "": "Algún comentario o sugerencia?",
-        "": "Ingresa tu comentario...",
-        "": "Enviar"
+        "watchNba": "Miras los partidos de la NBA?",
+        "teamNba": "Cuál es tu equipo favorito de la NBA?",
+        "selTeamNba": "Selecciona un equipo",
+        "favPlayer": "Cuál es tu jugador favorito de la NBA?",
+        // "": "Nombre del jugador",
+        "watchLeagues": "Qué otras ligas de basketball sigues o miras por TV?",
+        "comments": "Algún comentario o sugerencia?",
+        // "": "Ingresa tu comentario...",
+        "btnSubmit": "Enviar"
     }
 }

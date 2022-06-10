@@ -27,20 +27,20 @@
         <form id="survey-form">
             <div class="form-group">
                 <label id="nameLabel" for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" required />
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
             </div>
             <div class="form-group">
                 <label id="emailLabel" for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" required />
+                <input type="email" name="email" id="email" class="form-control" placeholder="Your eMail" required />
             </div>
             <div class="form-group">
                 <label id="numberLabel" for="number">Age</label>
-                <input type="number" name="age" id="number" min="10" max="40" class="form-control" required />
+                <input type="number" name="age" id="number" min="10" max="40" class="form-control" placeholder="Your Age" required />
             </div>
             <div class="form-group">
                 <p class="gender">What is your gender?</p>
                 <label>
-                    <input type="radio" name="gender" value="male" class="input-radio" /><b class="genderMale">Male</b>
+                    <input type="radio" name="gender" value="male" class="input-radio" checked /><b class="genderMale">Male</b>
                     <input type="radio" name="gender" value="female" class="input-radio" /><b class="genderFemale">Female</b>
                 </label> 
             </div>
@@ -58,8 +58,8 @@
             <div class="form-group">
                 <p class="statsText">Would you like to see your statistics on a website?</p>
                 <label>
-                    <input type="radio" name="lub" value="yes" class="input-radio" checked /><b class="siText">Yes</b>
-                    <input type="radio" name="lub" value="no" class="input-radio" />No
+                    <input type="radio" name="webStats" value="yes" class="input-radio" checked /><b class="siText">Yes</b>
+                    <input type="radio" name="webStats" value="no" class="input-radio" />No
                 </label> 
             </div>
             <div class="form-group">
@@ -92,19 +92,19 @@
             <div class="form-group">
                 <p class="playerLub">Which is your favorite basketball player in the LUB?</p>
                 <label id="player-name" for="lub-player-name"></label>
-                <input type="text" name="lub-player-name" id="lub-player-name" class="form-control" />
+                <input type="text" name="lubPlayerName" id="lubPlayerName" class="form-control" placeholder="Player Name" />
             </div>  
             <div class="form-group">
-                <p>Do you watch NBA?</p>
+                <p class="watchNba">Do you watch NBA?</p>
                 <label>
                     <input type="radio" name="nba" value="yes" class="input-radio" checked /><b class="sibText">Yes</b>
                     <input type="radio" name="nba" value="no" class="input-radio" />No
                 </label>
             </div>
             <div class="form-group">
-                <p>Which is your favorite NBA basketball team?</p>
+                <p class="teamNba">Which is your favorite NBA basketball team?</p>
                 <select id="dropdown" name="nba-team" class="form-control">
-                    <option disabled selected value>Select a team</option>
+                    <option disabled selected value class="selTeamNba">Select a team</option>
                     <option value="celtics">Boston Celtics</option>
                     <option value="nets">Brooklyn Nets</option>
                     <option value="knicks">New York Knicks</option>
@@ -138,12 +138,12 @@
                 </select>
             </div>
             <div class="form-group">
-                <p>Which is your favorite basketball player in the NBA?</p>
+                <p class="favPlayer">Which is your favorite basketball player in the NBA?</p>
                 <label id="player-name" for="nba-player-name"></label>
-                <input type="text" name="nba-player-name" id="nba-player-name" class="form-control" />
+                <input type="text" name="nba-player-name" id="nba-player-name" class="form-control" placeholder="Player Name" />
             </div>
             <div class="form-group">
-                <p class="watch">What basketball leagues do you watch?</p>
+                <p class="watchLeagues">What basketball leagues do you watch?</p>
                 <label><input name="watch" value="lub" type="checkbox" class="input-checkbox" />LUB - Liga Uruguaya de B&aacute;squetbol</label><br />
                 <label><input name="watch" value="nba" type="checkbox" class="input-checkbox" />NBA - National Basketball Association</label><br />
                 <label><input name="watch" value="lnb" type="checkbox" class="input-checkbox" />LNB - Liga Nacional de B&aacute;squetbol</label><br />
@@ -152,11 +152,11 @@
                 <label><input name="watch" value="nbb" type="checkbox" class="input-checkbox" />NBB - Novo Basquete Brasil</label>
             </div>
             <div class="form-group">
-                <p>Any comments or suggestions?</p>
-                <textarea id="comments" class="input-textarea" name="comment"></textarea>
+                <p class="comments">Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Coment here..."></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" id="submit" class="submit-button">Submit</button>
+                <button type="submit" id="submit" class="btnSubmit">Submit</button>
             </div>
         </form>
     </div>
